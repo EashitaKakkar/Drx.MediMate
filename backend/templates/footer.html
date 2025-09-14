@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+</head>
+<body>
+    <footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <div class="footer-brand">
+                <img src="{{ url_for('static', filename='favicon.png') }}" alt="MediMate Logo">
+                <p>Providing seamless healthcare management solutions.</p>
+            </div>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 MediMate. All rights reserved.</p>
+    </div>
+</footer>
+
+<style>
+/* Basic styling for the new footer */
+.main-footer {
+    background-color: #283593; /* Matches the original footer color */
+    color: #fff;
+    padding: 3rem 0;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #4a5a9c;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex-basis: 30%;
+    margin-bottom: 2rem;
+}
+
+.footer-brand img {
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: #e0e7ef;
+}
+
+.footer-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column a {
+    color: #e0e7ef;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #f7f7f7;
+    text-decoration: underline;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid #4a5a9c;
+    margin-top: 2rem;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+</style>
+</body>
+</html>

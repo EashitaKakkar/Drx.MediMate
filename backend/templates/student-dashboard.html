@@ -5,6 +5,7 @@
     <title>Student Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -351,9 +352,7 @@
             </div>
         </section>
     </main>
-    <footer style="background:#283593; padding:1.5rem 0; border-top:1px solid #e0e7ef; color:#888;">
-        <p>&copy; 2025 MediMate. All rights reserved.</p>
-    </footer>
+    
 
     <!-- Modal for adding a record -->
     <div id="record-modal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(40,53,147,0.10); z-index:1000; align-items:center; justify-content:center;">
@@ -468,5 +467,6 @@
         };
     </script>
     {% include "goToTop.html" %}
+    {% include "footer.html" %}
 </body>
 </html>

@@ -25,9 +25,9 @@ def pharmacist_dashboard():
 def student_dashboard():
     return render_template('student-dashboard.html')
 
-@dashboard_bp.route('/patient-dashboard.html')
-def patient_dashboard():
-    return render_template('patient-dashboard.html')
+#@dashboard_bp.route('/patient-dashboard.html')
+#def patient_dashboard():
+ #   return render_template('patient-dashboard.html')
 
 @dashboard_bp.route('/my-account')
 def my_account():
